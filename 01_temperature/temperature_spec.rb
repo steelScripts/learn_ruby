@@ -17,8 +17,6 @@
 
 require "temperature"
 
-describe "temperature conversion functions" do
-
   describe "#ftoc" do
 
     it "converts freezing temperature" do
@@ -37,7 +35,7 @@ describe "temperature conversion functions" do
       expect(ftoc(68)).to eq(20)
     end
 
-  end
+end
 
   describe "#ctof" do
 
@@ -61,7 +59,5 @@ describe "temperature conversion functions" do
       # and http://en.wikipedia.org/wiki/Double_precision_floating-point_format
       # Also, try "puts 0.5 - 0.4 - 0.1" -- pretty crazy, right?
     end
-
-  end
 
 end
